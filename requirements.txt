@@ -10,3 +10,4 @@ fastapi
 uvicorn
 tiktoken
 httpx
+langchain_huggingface
