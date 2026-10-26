@@ -4,8 +4,8 @@ load_dotenv()
 
 from langchain.chat_models import init_chat_model
 
-model= init_chat_model("llama-3.3-70b-versatile", temperature=1, model_provider="groq", max_tokens=20)
+model= init_chat_model("openai/gpt-oss-120b", temperature=1, model_provider="groq", max_tokens=20)
 
 response = model.invoke("poem on AI")
 
-print(response.content)
+print(repr(response.content))
